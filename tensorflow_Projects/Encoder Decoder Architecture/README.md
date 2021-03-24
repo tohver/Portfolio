@@ -23,7 +23,7 @@ The encoder takes words of an English sentence as input, and uses a pre-trained 
 
 The decoder RNN takes the internal state of the encoder network as its initial state. A start token is passed in as the first input, which is embedded using a learned German word embedding. The decoder RNN then makes a prediction for the next German word, which during inference is then passed in as the following input, and this process is repeated until the special <end> token is emitted from the decoder.
 
-The project is based on the Capstone Project in the course Customising your models with TensorFlow 2 offered by Imperial College London on Coursera.
+The project is based on the Capstone Project in the course [Customising your models with TensorFlow 2](https://www.coursera.org/learn/customising-models-tensorflow2/home/welcome) offered by Imperial College London on Coursera.
 
 
 
