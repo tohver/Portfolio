@@ -11,7 +11,7 @@ Wherefore, to make the training quicker, the following restriction have been mad
 
 
 
-The language dataset (english and german sentence pairs) is from http://www.manythings.org/anki/. 
+The language dataset is from http://www.manythings.org/anki/.   
 The original dataset consists of over 200,000 pairs of sentences in English and German. 
 
 The following schematic ilustrated the custom translation model architecture built in this project.
