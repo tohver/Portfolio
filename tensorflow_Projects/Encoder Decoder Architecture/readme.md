@@ -1,4 +1,5 @@
-TEST
+with image ![Alt Text](https://docs.google.com/uc?export=download&id=1DTeaXD8tA8RjkpVrB2mr9csSBOY4LQiW)
+
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 
 A simple neural network that translates from English to German.
@@ -37,9 +38,12 @@ The preprocessing includes m.innymi tokenizing of the target language and using 
 
 3. Building the encoder network (using functional API)
 4. Building the decoder network (using Subclassing)
-5. 
+5. Custom training loop
 
 
 
 
 The project is based on the Capstone Project in Customizing ...... offered by Imperial College London.
+
+
+
