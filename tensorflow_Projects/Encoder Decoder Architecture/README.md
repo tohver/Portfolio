@@ -4,8 +4,8 @@
 
 The purpose of this simple neural network is to demonstrate the potential of tensorflow to customize your model, by using Functional API, building your own layers, subclassing etc.
 It's not the intention to beat the competitors like DeepL or Google Translator.
-Wherefore, to make the training quicker, the following restriction have been made:
-* The number of pairs has been reduced to 30.000
+Wherefore, to make the training quicker, the following restrictions have been made:
+* The number of sentence pairs has been reduced to 30.000
 * the networks (encoder and decoder) have a minimum number of hidden layers
 * the model has been trained for 10 epochs.
 
@@ -14,7 +14,7 @@ Wherefore, to make the training quicker, the following restriction have been mad
 The language dataset is from http://www.manythings.org/anki/.   
 The original dataset consists of over 200,000 pairs of sentences in English and German. 
 
-The following schematic ilustrated the custom translation model architecture built in this project.
+The following schematic ilustrates the custom translation model architecture built in this project.
 
 ![Alt Text](https://docs.google.com/uc?export=download&id=1XsS1VlXoaEo-RbYNilJ9jcscNZvsSPmd)
 
