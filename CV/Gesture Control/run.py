@@ -37,7 +37,7 @@ while True:
         
         if length > 50:
             cv2.circle(img, (cx, cy), 4, (0, 255, 0), cv2.FILLED)
-            os.system("start \"\" www.google.com")
+            os.system("start \"\" https://soundcloud.com/you/library")
             time.sleep(3)
         if f_power > 25:
             cv2.putText(img, 'You are rude', (wCam//2, hCam//2), cv2.FONT_HERSHEY_TRIPLEX, 1, (255,255,255), 3)
@@ -50,3 +50,4 @@ while True:
     cv2.imshow("Img", img)
     if cv2.waitKey(5) & 0xFF == 27:
         break
+
