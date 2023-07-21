@@ -5,10 +5,10 @@ import numpy as np
 import handTracking as ht
 import math
 
-wCam, hCam = 640, 480
+cameraWidth, cameraHeight = 640, 480
 cap = cv2.VideoCapture(0)
-cap.set(3, wCam)
-cap.set(4, hCam)
+cap.set(3, cameraWidth)
+cap.set(4, cameraHeight)
 previousTime = 0
  
 detector = ht.handDetector(detectionConfidence=0.7)
@@ -27,7 +27,7 @@ while True:
         indexDipX, indexDipY = landmarkList[7][1], landmarkList[7][2]
 
 
-        cv2.circle(img, (thumbX, thumbY), 5, (255, 0, 255), cv2.FILLED)
+        cv2.circle(img, (thumbX, thumbY), 5, (0, 255, 0), cv2.FILLED)
         cv2.circle(img, (indexFingerX, indexFingerY), 5, (255, 0, 255), cv2.FILLED)
         cv2.line(img, (thumbX, thumbY), (indexFingerX, indexFingerY), (255, 0, 255), 3)
         cv2.circle(img, (cx, cy), 5, (255, 0, 255), cv2.FILLED)
@@ -40,7 +40,7 @@ while True:
             os.system("start \"\" https://soundcloud.com/you/library")
             time.sleep(3)
         if f_power > 25:
-            cv2.putText(img, 'You are rude', (wCam//2, hCam//2), cv2.FONT_HERSHEY_TRIPLEX, 1, (255,255,255), 3)
+            cv2.putText(img, 'You are rude', (cameraWidth//2, cameraHeight//2), cv2.FONT_HERSHEY_TRIPLEX, 1, (255,255,255), 3)
 
     currentTime = time.time()
     fps = 1 / (currentTime - previousTime)
